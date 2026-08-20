@@ -1,0 +1,14 @@
+.color-picker-container{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.color-box{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(209, 55, 55);
+}
