@@ -1,0 +1,16 @@
+import React,{useState} from 'react'
+
+import Ci from './components/Child'
+export default function App() {
+    const [Count, setCount] = useState(1);
+  return (
+    <div>
+      <h1>count: {Count}</h1>
+      <button className= "btn btn-primary" onClick={()=> setCount(Count + 1)}>
+        parent calling
+      </button>
+
+      <Ci data = {setCount} Count={Count}/>
+    </div>
+  )
+}
